@@ -23,7 +23,7 @@ async function SwitchRegion(play) {
 			if (current != HK) return HK;
 		} else if (/\u50c5[\u4e00-\u9fa5]+\u53f0|%20%E5%8F%B0&/.test(play)) {
 			if (current != TW) return TW;
-		} else if (/PlayView|nickfree/.test(play)) {
+		} else if (/PlayView|nickfree|defaultwords/.test(play)) {
 			if (current != DF) return DF;
 		} else if (current != CN) return CN;
 	})()
